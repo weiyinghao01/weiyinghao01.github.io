@@ -1,4 +1,10 @@
-site_name: My Docs
+site_name: Yh's Docs
 site_url: https://weiyinghao01.github.io
 theme:
   name: material
+  language: zh
+
+
+plugins: 
+  - blog
+  # - social
