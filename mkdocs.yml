@@ -1,12 +1,42 @@
-site_name: Yh's Docs
+site_name: My Docs
 site_url: https://weiyinghao01.github.io
 theme:
-  name: material
-  language: zh
+  name: 'material'
+  palette:
+    primary: 'pink'
+    accent: 'pink'
+  features:
+    - navigation.expand
+    - navigation.tabs
+    - navigation.sections
+    - toc.follow
+#    - toc.integrate
+    - footer
+    - footer.about
+    - footer.licenses
+    - footer.version
+    - search
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
 
-plugins: 
-  - blog
-  # - social
+nav:
+    - Home: 'index.md'
+    - Hello: 'hello.md'
+    - Notes: 
+        - cf-742-div2: './notes/cf-742-div2.md'
+    - About: 'about.md'
+
+plugins:
+  - tags
+  - search
+
+extra:
+  tags:
+    <tag>: <identifier>
+
 
 
 markdown_extensions:
@@ -20,17 +50,20 @@ markdown_extensions:
   - meta
   - def_list
   - pymdownx.arithmatex
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
+  - attr_list
   - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_png
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.magiclink
-  - pymdownx.mark
-  - pymdownx.smartsymbols
+  - pymdownx.snippets
   - pymdownx.superfences
-  - pymdownx.tasklist
-  - pymdownx.tilde
+
+
+extra_javascript:
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+
+copyright: Copyright &copy; 2023 yh
