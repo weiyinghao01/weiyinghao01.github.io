@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://weiyinghao01.github.io/</loc>
+         <lastmod>2023-11-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://weiyinghao01.github.io/about/</loc>
+         <lastmod>2023-11-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://weiyinghao01.github.io/hello/</loc>
+         <lastmod>2023-11-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://weiyinghao01.github.io/notes/cf-742-div2/</loc>
+         <lastmod>2023-11-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>

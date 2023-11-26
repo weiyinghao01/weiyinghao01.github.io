@@ -1,0 +1,866 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://weiyinghao01.github.io/notes/cf-742-div2/">
+      
+      
+        <link rel="prev" href="../../hello/">
+      
+      
+        <link rel="next" href="../../about/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.12">
+    
+    
+      
+        <title>cf-742-div2 - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fad675c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#b" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              cf-742-div2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../hello/" class="md-tabs__link">
+        
+  
+    
+  
+  Hello
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+    
+  
+  Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hello/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hello
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Notes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    cf-742-div2
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    cf-742-div2
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      B
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      C
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    <span class="md-ellipsis">
+      D
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      E
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      B
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      C
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    <span class="md-ellipsis">
+      D
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      E
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>cf-742-div2</h1>
+
+<blockquote>
+<p>是兄弟就一起来上分 ！</p>
+</blockquote>
+<!--more-->
+
+<p><a href="https://killtimer0.github.io/"><code>梁佬题解</code></a> </p>
+<h3 id="b">B<a class="headerlink" href="#b" title="Permanent link">&para;</a></h3>
+<ol>
+<li>问题 : 有数组a , 对数组所有的元素进行 <code>Mex</code> 和 <code>Xor</code> 运算 ，结果分别为 a 和 b , 求 数组 a 的元素最少为多少。</li>
+<li>核心 :<ul>
+<li>令 <code>x = 0 ^ 1 ^ 2 …… ^ a-1</code>， 则当<code>x = b</code>时 <code>ans = a</code></li>
+<li>当 <code>x != b &amp;&amp; x ^ b != a</code> 时， 我们可以添加 <code>x^b</code> , 有 <code>x ^ b ^ x  = b</code>, <code>ans = a + 1</code>;</li>
+<li>当 <code>x != b &amp;&amp; x ^ b == a</code>时， 我们不能添加 <code>x^b</code>, 我们添加 <code>x ^ b ^ 1</code> 和 1 ， 有 <code>x ^ x ^ b ^ 1 ^ 1 = b, ans = a + 2</code>;</li>
+</ul>
+</li>
+</ol>
+<div class="language-c++ highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;algorithm&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstring&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3e5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="kt">int</span><span class="w"> </span><span class="n">w</span><span class="p">[</span><span class="n">N</span><span class="p">];</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="kt">void</span><span class="w"> </span><span class="nf">Init</span><span class="p">(){</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">N</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="w"> </span><span class="n">i</span><span class="p">){</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="mi">-1</span><span class="p">]</span><span class="o">^</span><span class="n">i</span><span class="p">;</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">}</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">t</span><span class="p">;</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="n">Init</span><span class="p">();</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">t</span><span class="p">);</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="n">t</span><span class="o">--</span><span class="p">){</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">        </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="o">&amp;</span><span class="n">b</span><span class="p">);</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">cnt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">w</span><span class="p">[</span><span class="n">a</span><span class="mi">-1</span><span class="p">]</span><span class="o">^</span><span class="n">b</span><span class="p">;</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">w</span><span class="p">[</span><span class="n">a</span><span class="mi">-1</span><span class="p">]</span><span class="o">==</span><span class="n">b</span><span class="p">){</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cnt</span><span class="p">);</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">        </span><span class="p">}</span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="n">d</span><span class="o">==</span><span class="n">a</span><span class="p">){</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cnt</span><span class="o">+</span><span class="mi">2</span><span class="p">);</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">        </span><span class="p">}</span><span class="k">else</span><span class="p">{</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cnt</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="c">C<a class="headerlink" href="#c" title="Permanent link">&para;</a></h3>
+<ol>
+<li>问题 : 规定一种加法进位时进到 <code>下下一位</code>，给定一个 n , 问有多少对正整数为这种运算的结果 </li>
+<li>
+<p>核心 :</p>
+<ul>
+<li>
+<p>因为奇数位进位只能进到奇数位，偶数位进位也只能进到偶数位 ，则把数按奇偶位拆成两个数 a, b ，则得到a, b的加法为普通的加法 。</p>
+</li>
+<li>
+<p>之和为a, b的数对分别为 <code>a+1, b + 1</code>, 则最终答案为 <code>(a+1)*(b+1)-2</code>， 减去其中一个数为0的两种情况 。</p>
+</li>
+</ul>
+</li>
+</ol>
+<div class="language-c++ highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="k">typedef</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">ll</span><span class="p">;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">t</span><span class="p">;</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">t</span><span class="p">;</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="n">t</span><span class="o">--</span><span class="p">){</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="n">string</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">        </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="o">++</span><span class="w"> </span><span class="n">i</span><span class="p">){</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">&amp;</span><span class="mi">1</span><span class="p">){</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">                </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="o">*</span><span class="mi">10</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="sc">&#39;0&#39;</span><span class="p">;</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">            </span><span class="k">else</span><span class="p">{</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">                </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="o">*</span><span class="mi">10</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="sc">&#39;0&#39;</span><span class="p">;</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%lld</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="mi">-2</span><span class="p">);</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="d">D<a class="headerlink" href="#d" title="Permanent link">&para;</a></h3>
+<ol>
+<li>问题 : 存在 n 个和为 s 的正整数，当把这些数<code>看为</code>十一进制表示的数时，得到他们的和，要求当和最大时输出这n个数。</li>
+<li>
+<p>核心 :</p>
+<ul>
+<li>
+<p>我们发现如果十一进制加法进位会有损失，且高位进位损失比低位进位损失要大，所以我们尽可能不进位或让低位进位 。</p>
+</li>
+<li>
+<p>我们可以每一次都尽可能地取最大的 $ 10^k$ , 即尽量都有更长的位数 。</p>
+</li>
+</ul>
+</li>
+</ol>
+<div class="language-c++ highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kt">void</span><span class="w"> </span><span class="nf">solve</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">){</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">==</span><span class="mi">1</span><span class="p">){</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="p">);</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="k">return</span><span class="p">;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="n">p</span><span class="o">*</span><span class="mi">10</span><span class="o">&lt;</span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w">   </span><span class="c1">// </span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="n">s</span><span class="o">-</span><span class="n">p</span><span class="o">&lt;</span><span class="n">n</span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">/=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w">  </span><span class="c1">// 核心为这两个循环，作用是挖出符合条件的最大的10^k</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">);</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="n">solve</span><span class="p">(</span><span class="n">s</span><span class="o">-</span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="mi">-1</span><span class="p">);</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="p">}</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">t</span><span class="p">;</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">t</span><span class="p">);</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="n">t</span><span class="o">--</span><span class="p">){</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">        </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">s</span><span class="o">&lt;</span><span class="n">n</span><span class="p">){</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;0</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">            </span><span class="k">continue</span><span class="p">;</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">        </span><span class="n">solve</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="e">E<a class="headerlink" href="#e" title="Permanent link">&para;</a></h3>
+<ol>
+<li>问题描述，给定一个长度为n的序列 a ，有以下两种操作：</li>
+<li><code>1 x y</code>  表示将 <span class="arithmatex"><span class="MathJax_Preview">a_x</span><script type="math/tex">a_x</script></span> 修改为 <code>y</code></li>
+<li><code>2 l r</code>  表示询问区间 <code>[ l , r ]</code> 上的连续非递减序列个数，其中单个数也算一个非递减序列 </li>
+<li>解决 : 典型线段树题型  </li>
+</ol>
+<p><strong>分析</strong> </p>
+<p>我们考虑 : </p>
+<p>​   要维护节点的答案(连续非递减序列个数)，左右节点需要存储什么信息，有以下几种情况：</p>
+<ul>
+<li>当<code>tr[2*u].rv &gt; tr[2*u+1].lv</code>时，<code>tr[u].ans = tr[2*u] .ans + tr[2*u+1].ans</code></li>
+<li>当<code>tr[2*u].rv &lt;= tr[2*u+1].lv</code>时，<code>tr[u].ans = tr[2*u].ans + tr[2*u+1].ans + tr[2*u].suffix * tr[2*u+1].prefix</code>  , 其中 prefix 和 suffix 分别存储序列的<code>前缀和后缀最大连续非递减序列个数</code> </li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">提示</p>
+<p>那为什么要写两个Push_up()呢？ 第一个Push_up()为了更新树中原本的区间，
+而第二个为了便于合并并更新查询时的区间，在数中原本不存在这样一个完整的区间。</p>
+</div>
+<p><strong>完整代码</strong></p>
+<div class="language-c++ highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2e5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">typedef</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">ll</span><span class="p">;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">N</span><span class="p">];</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="k">struct</span><span class="w"> </span><span class="nc">node</span><span class="p">{</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="p">;</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">lv</span><span class="p">,</span><span class="w"> </span><span class="n">rv</span><span class="p">;</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="n">ll</span><span class="w"> </span><span class="n">suf</span><span class="p">,</span><span class="w"> </span><span class="n">pre</span><span class="p">,</span><span class="w"> </span><span class="n">ans</span><span class="p">;</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="p">}</span><span class="n">tr</span><span class="p">[</span><span class="mi">4</span><span class="o">*</span><span class="n">N</span><span class="p">];</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">node</span><span class="w"> </span><span class="n">Node</span><span class="p">;</span><span class="w"> </span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="c1">// 更新为关键d </span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="kt">void</span><span class="w"> </span><span class="nf">Push_up</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">u</span><span class="p">){</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">    </span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">lv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">].</span><span class="n">lv</span><span class="p">,</span><span class="w"> </span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">rv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">rv</span><span class="p">;</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">    </span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">pre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">((</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">].</span><span class="n">pre</span><span class="o">==</span><span class="p">(</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">].</span><span class="n">r</span><span class="o">-</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">].</span><span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span><span class="o">&amp;&amp;</span><span class="p">(</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">].</span><span class="n">rv</span><span class="o">&lt;=</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">lv</span><span class="p">))</span><span class="o">?</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">].</span><span class="n">pre</span><span class="o">+</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">pre</span><span class="o">:</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">].</span><span class="n">pre</span><span class="p">;</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">    </span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">suf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">((</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">suf</span><span class="o">==</span><span class="p">(</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">r</span><span class="o">-</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span><span class="o">&amp;&amp;</span><span class="p">(</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">lv</span><span class="o">&gt;=</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">].</span><span class="n">rv</span><span class="p">))</span><span class="o">?</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">suf</span><span class="o">+</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">].</span><span class="n">suf</span><span class="o">:</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">suf</span><span class="p">;</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">    </span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">ans</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">].</span><span class="n">ans</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">ans</span><span class="p">;</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">].</span><span class="n">rv</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">lv</span><span class="p">){</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">        </span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">ans</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">].</span><span class="n">suf</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">tr</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">pre</span><span class="p">;</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="p">}</span>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="kt">void</span><span class="w"> </span><span class="nf">Push_up</span><span class="p">(</span><span class="n">Node</span><span class="w"> </span><span class="o">&amp;</span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="n">Node</span><span class="w"> </span><span class="o">&amp;</span><span class="n">L</span><span class="p">,</span><span class="w"> </span><span class="n">Node</span><span class="w"> </span><span class="o">&amp;</span><span class="n">R</span><span class="p">){</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">    </span><span class="n">u</span><span class="p">.</span><span class="n">l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">L</span><span class="p">.</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">R</span><span class="p">.</span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">lv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">L</span><span class="p">.</span><span class="n">lv</span><span class="p">,</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">rv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">R</span><span class="p">.</span><span class="n">rv</span><span class="p">;</span><span class="w">  </span>
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">    </span><span class="n">u</span><span class="p">.</span><span class="n">pre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">((</span><span class="n">L</span><span class="p">.</span><span class="n">pre</span><span class="o">==</span><span class="p">(</span><span class="n">L</span><span class="p">.</span><span class="n">r</span><span class="o">-</span><span class="n">L</span><span class="p">.</span><span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span><span class="o">&amp;&amp;</span><span class="p">(</span><span class="n">L</span><span class="p">.</span><span class="n">rv</span><span class="o">&lt;=</span><span class="n">R</span><span class="p">.</span><span class="n">lv</span><span class="p">))</span><span class="o">?</span><span class="n">L</span><span class="p">.</span><span class="n">pre</span><span class="o">+</span><span class="n">R</span><span class="p">.</span><span class="n">pre</span><span class="o">:</span><span class="n">L</span><span class="p">.</span><span class="n">pre</span><span class="p">;</span>
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">    </span><span class="n">u</span><span class="p">.</span><span class="n">suf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">((</span><span class="n">R</span><span class="p">.</span><span class="n">suf</span><span class="o">==</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">r</span><span class="o">-</span><span class="n">R</span><span class="p">.</span><span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span><span class="o">&amp;&amp;</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">lv</span><span class="o">&gt;=</span><span class="n">L</span><span class="p">.</span><span class="n">rv</span><span class="p">))</span><span class="o">?</span><span class="n">R</span><span class="p">.</span><span class="n">suf</span><span class="o">+</span><span class="n">L</span><span class="p">.</span><span class="n">suf</span><span class="o">:</span><span class="n">R</span><span class="p">.</span><span class="n">suf</span><span class="p">;</span>
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">    </span><span class="n">u</span><span class="p">.</span><span class="n">ans</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">L</span><span class="p">.</span><span class="n">ans</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">R</span><span class="p">.</span><span class="n">ans</span><span class="p">;</span>
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">L</span><span class="p">.</span><span class="n">rv</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">R</span><span class="p">.</span><span class="n">lv</span><span class="p">){</span>
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">        </span><span class="n">u</span><span class="p">.</span><span class="n">ans</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">L</span><span class="p">.</span><span class="n">suf</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">R</span><span class="p">.</span><span class="n">pre</span><span class="p">;</span>
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="p">}</span>
+</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>
+</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="kt">void</span><span class="w"> </span><span class="nf">Build</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="p">){</span>
+</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">l</span><span class="o">==</span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">l</span><span class="p">],</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">l</span><span class="p">],</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">};</span>
+</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="w">    </span><span class="k">else</span><span class="p">{</span>
+</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="w">        </span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">lv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">l</span><span class="p">],</span><span class="w"> </span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">rv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">r</span><span class="p">];</span><span class="w">  </span><span class="c1">// 此处易忘 ！</span>
+</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="o">+</span><span class="n">r</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="w">        </span><span class="n">Build</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="p">),</span><span class="w"> </span><span class="n">Build</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="p">);</span>
+</span><span id="__span-3-43"><a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a><span class="w">        </span><span class="n">Push_up</span><span class="p">(</span><span class="n">u</span><span class="p">);</span>
+</span><span id="__span-3-44"><a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-45"><a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a><span class="p">}</span>
+</span><span id="__span-3-46"><a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a>
+</span><span id="__span-3-47"><a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a><span class="n">Node</span><span class="w"> </span><span class="nf">Query</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="p">){</span>
+</span><span id="__span-3-48"><a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">l</span><span class="o">==</span><span class="n">l</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">r</span><span class="o">==</span><span class="n">r</span><span class="p">){</span><span class="w"> </span>
+</span><span id="__span-3-49"><a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a><span class="w">        </span><span class="c1">//cout &lt;&lt; &quot;-- 找到子区间&quot; &lt;&lt; l &lt;&lt; &#39;~&#39; &lt;&lt; r &lt;&lt; endl;  // Debug 的好地方 </span>
+</span><span id="__span-3-50"><a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">];</span>
+</span><span id="__span-3-51"><a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a><span class="w">    </span><span class="p">}</span><span class="k">else</span><span class="p">{</span>
+</span><span id="__span-3-52"><a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">l</span><span class="o">+</span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">r</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+</span><span id="__span-3-53"><a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">r</span><span class="o">&lt;=</span><span class="n">mid</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">Query</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">min</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="p">));</span>
+</span><span id="__span-3-54"><a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">l</span><span class="o">&gt;</span><span class="n">mid</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">Query</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">max</span><span class="p">(</span><span class="n">mid</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">),</span><span class="w"> </span><span class="n">r</span><span class="p">);</span>
+</span><span id="__span-3-55"><a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a><span class="w">        </span><span class="k">else</span><span class="p">{</span>
+</span><span id="__span-3-56"><a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a><span class="w">            </span><span class="n">Node</span><span class="w"> </span><span class="n">res</span><span class="p">,</span><span class="w"> </span><span class="n">left</span><span class="p">,</span><span class="w"> </span><span class="n">right</span><span class="p">;</span>
+</span><span id="__span-3-57"><a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a><span class="w">            </span><span class="n">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Query</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="p">);</span>
+</span><span id="__span-3-58"><a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a><span class="w">            </span><span class="n">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Query</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="p">);</span>
+</span><span id="__span-3-59"><a id="__codelineno-3-59" name="__codelineno-3-59" href="#__codelineno-3-59"></a><span class="w">            </span><span class="n">Push_up</span><span class="p">(</span><span class="n">res</span><span class="p">,</span><span class="w"> </span><span class="n">left</span><span class="p">,</span><span class="w"> </span><span class="n">right</span><span class="p">);</span>
+</span><span id="__span-3-60"><a id="__codelineno-3-60" name="__codelineno-3-60" href="#__codelineno-3-60"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">res</span><span class="p">;</span>
+</span><span id="__span-3-61"><a id="__codelineno-3-61" name="__codelineno-3-61" href="#__codelineno-3-61"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-3-62"><a id="__codelineno-3-62" name="__codelineno-3-62" href="#__codelineno-3-62"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-63"><a id="__codelineno-3-63" name="__codelineno-3-63" href="#__codelineno-3-63"></a><span class="p">}</span>
+</span><span id="__span-3-64"><a id="__codelineno-3-64" name="__codelineno-3-64" href="#__codelineno-3-64"></a>
+</span><span id="__span-3-65"><a id="__codelineno-3-65" name="__codelineno-3-65" href="#__codelineno-3-65"></a><span class="kt">void</span><span class="w"> </span><span class="nf">Modify</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">th</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">){</span>
+</span><span id="__span-3-66"><a id="__codelineno-3-66" name="__codelineno-3-66" href="#__codelineno-3-66"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">l</span><span class="o">==</span><span class="n">th</span><span class="o">&amp;&amp;</span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">r</span><span class="o">==</span><span class="n">th</span><span class="p">){</span>
+</span><span id="__span-3-67"><a id="__codelineno-3-67" name="__codelineno-3-67" href="#__codelineno-3-67"></a><span class="w">        </span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">lv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">rv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+</span><span id="__span-3-68"><a id="__codelineno-3-68" name="__codelineno-3-68" href="#__codelineno-3-68"></a><span class="w">    </span><span class="p">}</span><span class="k">else</span><span class="p">{</span>
+</span><span id="__span-3-69"><a id="__codelineno-3-69" name="__codelineno-3-69" href="#__codelineno-3-69"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">l</span><span class="o">+</span><span class="n">tr</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">r</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+</span><span id="__span-3-70"><a id="__codelineno-3-70" name="__codelineno-3-70" href="#__codelineno-3-70"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">th</span><span class="o">&lt;=</span><span class="n">mid</span><span class="p">)</span><span class="w"> </span><span class="n">Modify</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="n">th</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span>
+</span><span id="__span-3-71"><a id="__codelineno-3-71" name="__codelineno-3-71" href="#__codelineno-3-71"></a><span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="n">Modify</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">th</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span>
+</span><span id="__span-3-72"><a id="__codelineno-3-72" name="__codelineno-3-72" href="#__codelineno-3-72"></a><span class="w">        </span><span class="n">Push_up</span><span class="p">(</span><span class="n">u</span><span class="p">);</span>
+</span><span id="__span-3-73"><a id="__codelineno-3-73" name="__codelineno-3-73" href="#__codelineno-3-73"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-74"><a id="__codelineno-3-74" name="__codelineno-3-74" href="#__codelineno-3-74"></a><span class="p">}</span>
+</span><span id="__span-3-75"><a id="__codelineno-3-75" name="__codelineno-3-75" href="#__codelineno-3-75"></a>
+</span><span id="__span-3-76"><a id="__codelineno-3-76" name="__codelineno-3-76" href="#__codelineno-3-76"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+</span><span id="__span-3-77"><a id="__codelineno-3-77" name="__codelineno-3-77" href="#__codelineno-3-77"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">;</span>
+</span><span id="__span-3-78"><a id="__codelineno-3-78" name="__codelineno-3-78" href="#__codelineno-3-78"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">m</span><span class="p">);</span>
+</span><span id="__span-3-79"><a id="__codelineno-3-79" name="__codelineno-3-79" href="#__codelineno-3-79"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span><span id="__span-3-80"><a id="__codelineno-3-80" name="__codelineno-3-80" href="#__codelineno-3-80"></a><span class="w">    </span><span class="n">Build</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span>
+</span><span id="__span-3-81"><a id="__codelineno-3-81" name="__codelineno-3-81" href="#__codelineno-3-81"></a><span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="n">m</span><span class="o">--</span><span class="p">){</span>
+</span><span id="__span-3-82"><a id="__codelineno-3-82" name="__codelineno-3-82" href="#__codelineno-3-82"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">q</span><span class="p">;</span>
+</span><span id="__span-3-83"><a id="__codelineno-3-83" name="__codelineno-3-83" href="#__codelineno-3-83"></a><span class="w">        </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d%d%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">q</span><span class="p">);</span>
+</span><span id="__span-3-84"><a id="__codelineno-3-84" name="__codelineno-3-84" href="#__codelineno-3-84"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">k</span><span class="o">==</span><span class="mi">1</span><span class="p">){</span>
+</span><span id="__span-3-85"><a id="__codelineno-3-85" name="__codelineno-3-85" href="#__codelineno-3-85"></a><span class="w">            </span><span class="n">Modify</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">q</span><span class="p">);</span>
+</span><span id="__span-3-86"><a id="__codelineno-3-86" name="__codelineno-3-86" href="#__codelineno-3-86"></a><span class="w">        </span><span class="p">}</span><span class="k">else</span><span class="p">{</span>
+</span><span id="__span-3-87"><a id="__codelineno-3-87" name="__codelineno-3-87" href="#__codelineno-3-87"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%lld</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Query</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">q</span><span class="p">).</span><span class="n">ans</span><span class="p">);</span>
+</span><span id="__span-3-88"><a id="__codelineno-3-88" name="__codelineno-3-88" href="#__codelineno-3-88"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-3-89"><a id="__codelineno-3-89" name="__codelineno-3-89" href="#__codelineno-3-89"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-90"><a id="__codelineno-3-90" name="__codelineno-3-90" href="#__codelineno-3-90"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-3-91"><a id="__codelineno-3-91" name="__codelineno-3-91" href="#__codelineno-3-91"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><a href="https://wyh-de-house.top/2021/10/01/Segment-tree-1/#more"><strong>线段树单点修改</strong></a> </p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 yh
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "toc.follow", "footer", "footer.about", "footer.licenses", "footer.version", "search", "navigation.top", "navigation.indexes", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "tags": {"\u003ctag\u003e": "\u003cidentifier\u003e"}, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c14ae12.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
